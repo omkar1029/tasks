@@ -1,8 +1,10 @@
 {
-  "title": "Task1",
+  "title": "Task2",
   "packageName": "org.cocos2d.demo",
-  "startScene": "29bb0677-1a23-48a7-91b9-a94a4825552b",
-  "excludeScenes": [],
+  "startScene": "46627976-40d9-480e-a4ac-58fe8318d57d",
+  "excludeScenes": [
+    "29bb0677-1a23-48a7-91b9-a94a4825552b"
+  ],
   "includeSDKBox": false,
   "orientation": {
     "landscapeLeft": true,
