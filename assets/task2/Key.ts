@@ -1,5 +1,6 @@
+import Keypad from "./Keypad";
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class Key extends cc.Component {
@@ -14,7 +15,7 @@ export default class Key extends cc.Component {
 
     // LIFE-CYCLE CALLBACKS:
 
-    onLoad () {
+    onLoad() {
         this.btn = this.getComponent(cc.Button);
 
         var clickEventHandler = new cc.Component.EventHandler();
@@ -23,12 +24,23 @@ export default class Key extends cc.Component {
         clickEventHandler.handler = "onKeyPress";
         clickEventHandler.customEventData = "foobar";
 
-        //this.getComponent(cc.Button).clickEvents.push(clickEventHandler);
         this.btn.clickEvents.push(clickEventHandler);
+
+        //alternate way
+        //this.node.on('click', this.onClick, this);
     }
 
-    onKeyPress(){
-        if(this.textBox.string != null){
+    //alternate way
+    // onClick(_button: cc.Button) {
+    //     if (this.textBox.string != null) {
+    //         this.textBox.string += this.keyValue;
+    //         return;
+    //     }
+    //     this.textBox.string = this.keyValue;
+    // }
+
+    onKeyPress() {
+        if (this.textBox.string != null) {
             this.textBox.string += this.keyValue;
             return;
         }
