@@ -28,6 +28,9 @@ export default class Weight extends cc.Component {
         }, this);
 
         this.node.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
+
+            this.showNearestMark();
+
             let loc: cc.Vec2 = event.getLocation();
             let loc2: cc.Vec2 = this.canvas.convertToNodeSpaceAR(loc);
             this.node.setPosition(loc2.add(this.offset));
@@ -76,5 +79,31 @@ export default class Weight extends cc.Component {
         this.node.setPosition(nearestPosition.x, nearestPosition.y + 20);//add some value to y to instantiate it above the desired location 
 
         this.node.angle = this.plankNode.angle;
+    }
+
+    showNearestMark(){
+        let plank: Plank = this.plankNode.getComponent(Plank);
+
+        let nearestDist: number = Infinity;
+        let nearestPosition: cc.Vec2 = null;
+        let nearestNode: cc.Node = null;
+
+        for (let i = 0; i < plank.allMarks.length; i++) {
+
+            let element: cc.Node = plank.allMarks[i];
+
+            if (cc.Vec2.distance(this.node, element) < nearestDist) {
+                nearestPosition = element.getPosition();
+                nearestDist = cc.Vec2.distance(this.node, element);
+                nearestNode = element;
+            }
+        }
+
+        for (let i = 0; i < plank.allMarks.length; i++) {
+
+            plank.allMarks[i].color = cc.Color.WHITE;
+        }
+
+        nearestNode.color = cc.Color.GREEN;
     }
 }
