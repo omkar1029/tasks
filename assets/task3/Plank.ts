@@ -13,6 +13,8 @@ export default class Plank extends cc.Component {
 
     allMarks: cc.Node[] = [];
 
+    markAnchorOffset: number = 15.5;
+
     onLoad(){
         this.addScale();
     }
@@ -21,7 +23,7 @@ export default class Plank extends cc.Component {
         for(let i = 1; i <= this.noOfMarks; i++){
             var node = cc.instantiate(this.mark);
             node.parent = this.markParent;
-            node.setPosition((this.markParent.width/(this.noOfMarks + 1)) * i - this.markParent.width/2, 0 );
+            node.setPosition((this.markParent.width/(this.noOfMarks + 1)) * i - this.markParent.width/2, this.markAnchorOffset );
             this.allMarks.push(node);
         }
     }

@@ -331,7 +331,7 @@
       "array": [
         3,
         1,
-        350.1990226553324,
+        342.2532501472093,
         0,
         0,
         0,
@@ -1285,7 +1285,7 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        -1.9975,
+        -1.9975000000000023,
         0,
         0,
         0,
@@ -1385,7 +1385,7 @@
     "_allowSleep": false,
     "_gravityScale": 1,
     "_linearDamping": 0,
-    "_angularDamping": 0,
+    "_angularDamping": 0.5,
     "_linearVelocity": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -2133,7 +2133,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 10,
+      "width": 4,
       "height": 10
     },
     "_anchorPoint": {
@@ -2238,7 +2238,7 @@
     "tag": 0,
     "_density": 1,
     "_sensor": false,
-    "_friction": 1,
+    "_friction": 0.2,
     "_restitution": 0,
     "body": null,
     "_offset": {
@@ -2248,10 +2248,10 @@
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 10,
+      "width": 4,
       "height": 10
     },
-    "_id": "be4QxzFk5Pb7GS+n1Ev3a/"
+    "_id": "cf8Dp27vxF5JEDU9f6zKIZ"
   },
   {
     "__type__": "cc.Canvas",

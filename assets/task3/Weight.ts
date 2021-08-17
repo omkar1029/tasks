@@ -6,7 +6,7 @@ export default class Weight extends cc.Component {
 
 
     @property(cc.Node)
-    plankNode: cc.Node;
+    plankNode: cc.Node = null;
 
     originalPosition: cc.Vec2 = null;
 
@@ -68,8 +68,12 @@ export default class Weight extends cc.Component {
             }
         }
 
+        let duration: number = 1;
+
         nearestNode.color = cc.Color.GREEN;
-        this.node.setPosition(nearestPosition.x, nearestPosition.y);
+        this.scheduleOnce(() => nearestNode.color = cc.Color.WHITE, duration)
+
+        this.node.setPosition(nearestPosition.x, nearestPosition.y + 20);//add some value to y to instantiate it above the desired location 
 
         this.node.angle = this.plankNode.angle;
     }
