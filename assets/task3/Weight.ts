@@ -56,32 +56,39 @@ export default class Weight extends cc.Component {
 
         let plank: Plank = this.plankNode.getComponent(Plank);
 
+        this.node.angle = this.plankNode.angle;
+
         let nearestDist: number = Infinity;
         let nearestPosition: cc.Vec2 = null;
         let nearestNode: cc.Node = null;
 
-        for (let i = 0; i < plank.allMarks.length; i++) {
+        for (let i = 0; i < plank.allRefPos.length; i++) {
 
-            let element: cc.Node = plank.allMarks[i];
+            let element: cc.Node = plank.allRefPos[i];
 
             if (cc.Vec2.distance(this.node, element) < nearestDist) {
+
+                //let loc: cc.Vec2 = this.canvas.convertToNodeSpaceAR(element.getPosition());
+                //let loc2: cc.Vec2 = this.canvas.convertToNodeSpaceAR(loc);
+
+                //console.log(loc.x, loc.y);
+
                 nearestPosition = element.getPosition();
+                //nearestPosition = loc;
                 nearestDist = cc.Vec2.distance(this.node, element);
                 nearestNode = element;
             }
         }
 
-        let duration: number = 1;
+        //let duration: number = 1;
 
-        nearestNode.color = cc.Color.GREEN;
-        this.scheduleOnce(() => nearestNode.color = cc.Color.WHITE, duration)
+        // nearestNode.color = cc.Color.GREEN;
+        //this.scheduleOnce(() => nearestNode.color = cc.Color.WHITE, duration)
 
-        this.node.setPosition(nearestPosition.x, nearestPosition.y + 20);//add some value to y to instantiate it above the desired location 
-
-        this.node.angle = this.plankNode.angle;
+        this.node.setPosition(nearestPosition.x, nearestPosition.y);//add some value to y to instantiate it above the desired location 
     }
 
-    showNearestMark(){
+    showNearestMark() {
         let plank: Plank = this.plankNode.getComponent(Plank);
 
         let nearestDist: number = Infinity;
@@ -105,5 +112,9 @@ export default class Weight extends cc.Component {
         }
 
         nearestNode.color = cc.Color.GREEN;
+    }
+
+    update() {
+        this.getComponent(cc.RigidBody).linearVelocity.x = 0;
     }
 }
