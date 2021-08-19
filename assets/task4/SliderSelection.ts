@@ -16,7 +16,6 @@ export default class SliderSelection extends cc.Component {
 
     onLoad(){
         this.sliderHandle.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
-            console.log("moving");
             this.showClosestToggle();
         }, this)
     }
