@@ -3,6 +3,9 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class SliderSelection extends cc.Component {
 
+    @property(cc.Node)
+    toggleContainer: cc.Node = null;
+
     @property(cc.Slider)
     slider: cc.Slider = null;
 
@@ -15,6 +18,8 @@ export default class SliderSelection extends cc.Component {
     noOfToggles:number = 4;
 
     onLoad(){
+        this.noOfToggles = this.toggleContainer.childrenCount;
+
         this.sliderHandle.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
             this.showClosestToggle();
         }, this)
