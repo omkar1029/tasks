@@ -1,5 +1,4 @@
 import Enemy from "./Enemy";
-import Player from "./Player";
 
 const { ccclass, property } = cc._decorator;
 
@@ -7,32 +6,32 @@ const { ccclass, property } = cc._decorator;
 export default class Spawner extends cc.Component {
 
     @property(cc.Node)
-    canvas: cc.Node = null;
+    private canvas: cc.Node = null;
 
     @property(cc.Prefab)
-    enemy: cc.Prefab = null;
+    private enemy: cc.Prefab = null;
 
     @property
-    noOfEnemies: number = 10;
+    private noOfEnemies: number = 10;
 
     @property(cc.Node)
-    player: cc.Node = null;
+    private player: cc.Node = null;
 
     enemies: cc.Node[] = [];
 
-    minX: number = -100;
-    maxX: number = 100;
-    minY: number = -50;
-    maxY: number = 50;
+    private minX: number = -100;
+    private maxX: number = 100;
+    private minY: number = -50;
+    private maxY: number = 50;
 
     @property 
-    minXPadding: number = 50;
+    private minXPadding: number = 50;
     @property 
-    maxXPadding: number = 50;
+    private maxXPadding: number = 50;
     @property 
-    minYPadding: number = 200;
+    private minYPadding: number = 200;
     @property 
-    maxYPadding: number = 50;
+    private maxYPadding: number = 50;
 
     onLoad() {
         cc.director.getPhysicsManager().enabled = true;
@@ -46,7 +45,7 @@ export default class Spawner extends cc.Component {
         this.sortEnemies();
     }
 
-    spawnEnemies() {
+    private spawnEnemies() {
         for (let i = 0; i < this.noOfEnemies; i++) {
             let node: cc.Node = cc.instantiate(this.enemy);
 
@@ -59,7 +58,7 @@ export default class Spawner extends cc.Component {
         }
     }
 
-    sortEnemies() {
+    private sortEnemies() {
         let tempJ = 0;
         
         for (let i = 0; i < this.enemies.length; i++) {
@@ -76,6 +75,9 @@ export default class Spawner extends cc.Component {
             this.enemies[tempJ] = tempNode;
 
             this.enemies[i].getComponent(Enemy).enemyIndex = i;
+            this.enemies[i].getComponent(Enemy).spawner = this;
         }
+
+        this.enemies.reverse();
     }
 }
