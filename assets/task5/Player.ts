@@ -1,10 +1,11 @@
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
+import Enemy from "./Enemy";
 import Spawner from "./Spawner";
 
 @ccclass
-export default class NewClass extends cc.Component {
-    
+export default class Player extends cc.Component {
+
     @property(cc.Prefab)
     bullet: cc.Prefab = null;
 
@@ -14,25 +15,45 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     canvas: cc.Node = null;
 
+    @property
+    bulletSpeed: number = 1;
+
+    index: number = 0;
+
+    onLoad() {
+        cc.director.getPhysicsManager().enabled = true;
+    }
+
     //added this to shoot button click event
-    shoot(){
+    shoot() {
         //instantiate bullet at player location
-        let node: cc.Node = cc.instantiate(this.bullet);
-        node.setPosition(this.node.position);
-        node.setParent(this.canvas);
-        //let dir: cc.Vec2 = this.node.getPosition() as cc.Vec2 - this.spawner.enemies[0].getPosition() as cc.Vec2;
-        //cc.v2(this.node.position.x, this.node.position.y)
+        let currentBullet: cc.Node = cc.instantiate(this.bullet);
+        currentBullet.setPosition(this.node.position);
+        currentBullet.setParent(this.canvas);
+
+        let dir: cc.Vec2 = this.spawner.enemies[this.index].getPosition().subtract(this.node.getPosition()).normalize();
+
+        this.node.lookAt(cc.v3(dir.x, dir.y, 0), cc.Vec3.FORWARD);
+
+        console.log(this.spawner.enemies[0].getPosition().x, this.spawner.enemies[this.index].getPosition().y);
+
+        let targetEnemy: cc.Node = this.spawner.enemies[this.index];
 
         this.schedule(() => {
-            this.moveBullet(node)
-        })
+            this.moveBullet(targetEnemy, currentBullet, dir)
+        }, 0.01/*cc.director.getDeltaTime()*/)
     }
 
-    moveBullet(bullet: cc.Node){
-        
-    }
+    moveBullet(target: cc.Node, bullet: cc.Node, dir: cc.Vec2) {
+        bullet.setPosition(bullet.getPosition().add(dir.mul(this.bulletSpeed * cc.director.getDeltaTime())));
 
-    getNearestEnemy(){
-
+        // destroying bullet with the help of distance 
+        if (cc.Vec2.distance(bullet.getPosition(), target.getPosition()) < target.width / 2) {
+            this.unschedule(this.moveBullet);
+            bullet.removeFromParent();
+            // delete this.spawner.enemies[0];
+            target.getComponent(Enemy).initializeDeath();
+            this.index = Math.min(this.index + 1, this.spawner.enemies.length - 1);//index shouldn't exceed the length of array
+        }
     }
 }

@@ -1,3 +1,4 @@
+import Enemy from "./Enemy";
 import Player from "./Player";
 
 const { ccclass, property } = cc._decorator;
@@ -14,8 +15,8 @@ export default class Spawner extends cc.Component {
     @property
     noOfEnemies: number = 10;
 
-    @property(Player)
-    player: Player = null;
+    @property(cc.Node)
+    player: cc.Node = null;
 
     enemies: cc.Node[] = [];
 
@@ -41,11 +42,8 @@ export default class Spawner extends cc.Component {
         this.minY = -this.node.height / 2 + this.minYPadding;
         this.maxY = this.node.height / 2 - this.maxYPadding;
 
-        this.sortEnemies();
-    }
-
-    start() {
         this.spawnEnemies();
+        this.sortEnemies();
     }
 
     spawnEnemies() {
@@ -62,18 +60,22 @@ export default class Spawner extends cc.Component {
     }
 
     sortEnemies() {
-        let nearestDist = Infinity;
         let tempJ = 0;
-
+        
         for (let i = 0; i < this.enemies.length; i++) {
-            for (let j = i; j < this.enemies.length - i; j++) {
-                if (cc.Vec2.distance(this.node, this.enemies[j]) < nearestDist) {
+            let nearestDist = Infinity;
+            for (let j = i; j < this.enemies.length; j++) {
+                let dist: number = cc.Vec2.distance(this.player, this.enemies[j]);
+                if ( dist < nearestDist) {
+                    nearestDist = dist;
                     tempJ = j;
                 }
             }
             let tempNode = this.enemies[i];
             this.enemies[i] = this.enemies[tempJ];
             this.enemies[tempJ] = tempNode;
+
+            this.enemies[i].getComponent(Enemy).enemyIndex = i;
         }
     }
 }
