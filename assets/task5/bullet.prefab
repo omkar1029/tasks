@@ -116,7 +116,7 @@
       "__id__": 1
     },
     "_enabled": true,
-    "bulletSpeed": 50,
+    "bulletSpeed": 500,
     "_id": ""
   },
   {

@@ -1,7 +1,6 @@
 const { ccclass, property } = cc._decorator;
 
 import Bullet from "./Bullet";
-import Enemy from "./Enemy";
 import Spawner from "./Spawner";
 
 @ccclass
@@ -16,15 +15,6 @@ export default class Player extends cc.Component {
     @property(cc.Node)
     private canvas: cc.Node = null;
 
-    @property
-    private bulletSpeed: number = 1;
-
-    index: number = 0;
-
-    onLoad() {
-        cc.director.getPhysicsManager().enabled = true;
-    }
-
     //added this to shoot button click event
     shoot() {
         //instantiate bullet at player location
@@ -32,10 +22,14 @@ export default class Player extends cc.Component {
         currentBullet.setPosition(this.node.position);
         currentBullet.setParent(this.canvas);
 
-        let dir: cc.Vec2 = this.spawner.enemies[this.spawner.enemies.length - 1].getPosition().subtract(this.node.getPosition()).normalize();
         currentBullet.getComponent(Bullet).spawner = this.spawner;
 
         //change players rotation towards target
-        this.node.lookAt(cc.v3(dir.x, dir.y, 0), cc.Vec3.FORWARD);
+        let vec1 = this.spawner.enemies[this.spawner.enemies.length - 1].getPosition();
+        let vec2 = this.node.getPosition();
+
+        let diff = {'x' : vec1.x - vec2.x, 'y': vec1.y - vec2.y};
+        let angle = Math.atan2(diff.y, diff.x);
+        this.node.angle = angle*180/Math.PI - 90;
     }
 }
