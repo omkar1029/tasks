@@ -24,13 +24,13 @@ export default class Spawner extends cc.Component {
     private minY: number = -50;
     private maxY: number = 50;
 
-    @property 
+    @property
     private minXPadding: number = 50;
-    @property 
+    @property
     private maxXPadding: number = 50;
-    @property 
+    @property
     private minYPadding: number = 200;
-    @property 
+    @property
     private maxYPadding: number = 50;
 
     onLoad() {
@@ -60,12 +60,12 @@ export default class Spawner extends cc.Component {
 
     private sortEnemies() {
         let tempJ = 0;
-        
+
         for (let i = 0; i < this.enemies.length; i++) {
             let nearestDist = Infinity;
             for (let j = i; j < this.enemies.length; j++) {
                 let dist: number = cc.Vec2.distance(this.player, this.enemies[j]);
-                if ( dist < nearestDist) {
+                if (dist < nearestDist) {
                     nearestDist = dist;
                     tempJ = j;
                 }

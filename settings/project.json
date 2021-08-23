@@ -12,6 +12,7 @@
     ],
     [
       false,
+      false,
       false
     ],
     [
@@ -46,6 +47,5 @@
       "enable": false
     }
   },
-  "migrate-history": [],
-  "start-scene": "current"
+  "migrate-history": []
 }

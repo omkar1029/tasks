@@ -15,13 +15,18 @@ export default class Bullet extends cc.Component {
 
     private direction: cc.Vec2 = null;
 
+    index: number = 0;
+
     start() {
-        this.target = this.spawner.enemies[this.spawner.enemies.length - 1];
+        this.target = this.spawner.enemies[this.index];
         this.direction = this.target.getPosition().subtract(this.node.getPosition()).normalize();
     }
 
     update(dt) {
-        this.node.setPosition(this.node.getPosition().add(this.direction.mul(this.bulletSpeed * dt)));
+        //this.node.setPosition(this.node.getPosition().add(this.direction.mul(this.bulletSpeed * dt)));
+
+        this.node.getComponent(cc.RigidBody).linearVelocity =
+            cc.v2(this.direction.x * this.bulletSpeed, this.direction.y * this.bulletSpeed);
 
         // destroying bullet with the help of distance 
         if (this.target.active) {
@@ -29,8 +34,13 @@ export default class Bullet extends cc.Component {
                 this.node.destroy();
                 this.target.getComponent(Enemy).initializeDeath();
             }
-        }else{
+        } else {
             this.node.destroy();
         }
+    }
+
+    onCollisionEnter(other, self) {
+        other.node.getComponent(Enemy).initializeDeath();
+        self.node.destroy();
     }
 }

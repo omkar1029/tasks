@@ -18,13 +18,13 @@ export default class Enemy extends cc.Component {
 
     //destroy the enemy node when animation is finished
     die() {
-        this.spawner.enemies.pop();
-        this.node.destroy();
-        console.log("enemies remaining: " + this.spawner.enemies.length);
+        //this.spawner.enemies.pop();
+        //this.node.destroy();
+        //console.log("enemies remaining: " + this.spawner.enemies.length);
         console.log(this.node.name + " destroyed");
     }
 
-    initializeDeath(){
+    initializeDeath() {
         this.anim.playAdditive("enemy_death");//play death animation when hit by a bullet
     }
 }
