@@ -29,17 +29,18 @@ export default class Bullet extends cc.Component {
             cc.v2(this.direction.x * this.bulletSpeed, this.direction.y * this.bulletSpeed);
 
         // destroying bullet with the help of distance 
-        if (this.target.active) {
-            if (cc.Vec2.distance(this.node.getPosition(), this.target.getPosition()) < this.target.width / 2) {
-                this.node.destroy();
-                this.target.getComponent(Enemy).initializeDeath();
-            }
-        } else {
-            this.node.destroy();
-        }
+        // if (this.target.active) {
+        //     if (cc.Vec2.distance(this.node.getPosition(), this.target.getPosition()) < this.target.width / 2) {
+        //         this.node.destroy();
+        //         this.target.getComponent(Enemy).initializeDeath();
+        //     }
+        // } else {
+        //     this.node.destroy();
+        // }
     }
 
     onCollisionEnter(other, self) {
+        console.log("BAMM!");
         other.node.getComponent(Enemy).initializeDeath();
         self.node.destroy();
     }
