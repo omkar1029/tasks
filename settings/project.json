@@ -1,23 +1,23 @@
 {
   "group-list": [
     "default",
-    "",
-    ""
+    "bullet",
+    "enemy"
   ],
   "collision-matrix": [
-    [
-      true,
-      false,
-      true
-    ],
     [
       false,
       false,
       false
     ],
     [
-      true,
       false,
+      false,
+      true
+    ],
+    [
+      false,
+      true,
       false
     ]
   ],
@@ -47,5 +47,6 @@
       "enable": false
     }
   },
-  "migrate-history": []
+  "migrate-history": [],
+  "start-scene": "current"
 }

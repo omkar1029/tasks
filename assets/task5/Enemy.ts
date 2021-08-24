@@ -12,7 +12,6 @@ export default class Enemy extends cc.Component {
     enemyIndex: number = 0;
 
     onLoad() {
-        cc.director.getPhysicsManager().enabled = true;
         this.anim = this.getComponent(cc.Animation);
     }
 

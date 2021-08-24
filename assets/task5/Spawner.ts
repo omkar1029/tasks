@@ -12,7 +12,7 @@ export default class Spawner extends cc.Component {
     private enemy: cc.Prefab = null;
 
     @property
-    private noOfEnemies: number = 10;
+    noOfEnemies: number = 10;
 
     @property(cc.Node)
     private player: cc.Node = null;
@@ -34,7 +34,8 @@ export default class Spawner extends cc.Component {
     private maxYPadding: number = 50;
 
     onLoad() {
-        cc.director.getPhysicsManager().enabled = true;
+        //cc.director.getPhysicsManager().enabled = true;
+        cc.director.getCollisionManager().enabled = true;
 
         this.minX = -this.node.width / 2 + this.minXPadding;
         this.maxX = this.node.width / 2 - this.maxXPadding;

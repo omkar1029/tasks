@@ -17,6 +17,14 @@ export default class Player extends cc.Component {
 
     private shootCounter: number = 9;
 
+    @property(cc.Label)
+    private finalMessage: cc.Label = null;
+
+
+    onLoad() {
+        this.shootCounter = this.spawner.enemies.length - 1;
+    }
+
     //added this to shoot button click event
     shoot() {
         if (this.shootCounter >= 0) {
@@ -37,8 +45,12 @@ export default class Player extends cc.Component {
             this.node.angle = angle * 180 / Math.PI - 90;
 
             this.shootCounter--;
-        } else {
-            console.log("see ya later!");
+
+            if (this.shootCounter < 0) {
+                console.log("CONGRATULATIONS!");
+                this.finalMessage.node.active = true;
+                this.finalMessage.string = "CONGRATULATIONS!";
+            }
         }
     }
 }
