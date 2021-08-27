@@ -35,15 +35,15 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 0,
+      "r": 255,
       "g": 0,
       "b": 0,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20,
-      "height": 20
+      "width": 10,
+      "height": 10
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -54,8 +54,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -379.998,
-        -152,
+        -376.266,
+        -73.625,
         0,
         0,
         0,
@@ -155,7 +155,7 @@
       "x": 0,
       "y": 0
     },
-    "_radius": 10,
+    "_radius": 5,
     "_id": ""
   },
   {
