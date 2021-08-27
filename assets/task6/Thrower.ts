@@ -5,7 +5,7 @@ import Target from "./Target";
 export default class Thrower extends cc.Component {
 
     @property(Target)
-    target: Target = null;
+    private target: Target = null;
 
     throw(){
         this.target.throw();

@@ -4,35 +4,32 @@ const { ccclass, property } = cc._decorator;
 export default class Target extends cc.Component {
 
     @property(cc.Prefab)
-    targetMark: cc.Prefab = null;
+    private targetMark: cc.Prefab = null;
 
     @property(cc.Node)
-    canvas: cc.Node = null;
+    private canvas: cc.Node = null;
 
     private mark: cc.Node = null;
 
     @property(cc.Node)
-    shootPoint: cc.Node = null;
+    private shootPoint: cc.Node = null;
 
     @property(cc.Prefab)
-    ball: cc.Prefab = null;
+    private ball: cc.Prefab = null;
 
     @property
-    flightDuration: number = 2;
+    private flightDuration: number = 2;
 
-    initialVelocity: cc.Vec2 = null;
+    private initialVelocity: cc.Vec2 = null;
 
     @property(cc.Animation)
-    anim: cc.Animation = null;
+    private anim: cc.Animation = null;
 
     @property(cc.Node)
-    playerSprite: cc.Node = null;
-
-    @property(cc.AnimationClip)
-    throwSequence: cc.AnimationClip = null;
+    private playerSprite: cc.Node = null;
 
     @property
-    groundY: number = -162;
+    private groundY: number = -162;
 
     onLoad() {
         cc.director.getPhysicsManager().enabled = true;
@@ -65,7 +62,7 @@ export default class Target extends cc.Component {
         bullet.getComponent(cc.RigidBody).linearVelocity = this.initialVelocity;
     }
 
-    calculateVelocityPlayerLevelTarget(target: cc.Vec2, origin: cc.Vec2, time: number): cc.Vec2 {
+    private calculateVelocityPlayerLevelTarget(target: cc.Vec2, origin: cc.Vec2, time: number): cc.Vec2 {
 
         //define distance x and y
         let distance: cc.Vec2 = target.sub(origin);
@@ -86,10 +83,8 @@ export default class Target extends cc.Component {
         return result;
     }
 
-    calculateVelocityGroundLevelTarget(target: cc.Vec2, origin: cc.Vec2, time: number): cc.Vec2 {
-        // let R: number = this.mark.getPosition().x - this.shootPoint.getPosition().x;
+    private calculateVelocityGroundLevelTarget(target: cc.Vec2, origin: cc.Vec2, time: number): cc.Vec2 {
         let R: number = target.x - this.shootPoint.getPosition().x;
-        // let H: number = this.shootPoint.getPosition().y - this.groundY;
         let H: number = origin.y - this.groundY;
 
         let Vx: number = R / time;
