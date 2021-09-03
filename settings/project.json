@@ -25,9 +25,9 @@
     "3D Physics/Builtin"
   ],
   "last-module-event-record-time": 1628667509625,
-  "design-resolution-width": 960,
-  "design-resolution-height": 640,
-  "fit-width": false,
+  "design-resolution-width": 1920,
+  "design-resolution-height": 1080,
+  "fit-width": true,
   "fit-height": true,
   "use-project-simulator-setting": false,
   "simulator-orientation": false,

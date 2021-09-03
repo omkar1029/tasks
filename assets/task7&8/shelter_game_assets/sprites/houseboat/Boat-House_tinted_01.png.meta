@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "e64cf944-6266-4784-943d-67bc8d5595a6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 538,
+  "height": 235,
+  "platformSettings": {},
+  "subMetas": {
+    "Boat-House_tinted_01": {
+      "ver": "1.0.4",
+      "uuid": "30b3818d-8e82-4b76-9c2f-0f89e3a337bf",
+      "rawTextureUuid": "e64cf944-6266-4784-943d-67bc8d5595a6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 538,
+      "height": 235,
+      "rawWidth": 538,
+      "rawHeight": 235,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

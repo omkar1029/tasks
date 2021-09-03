@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "015c844b-0397-4513-9501-d51d6c7b1a88",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 565,
+  "height": 229,
+  "platformSettings": {},
+  "subMetas": {
+    "Kerala BG_Tent House_00001": {
+      "ver": "1.0.4",
+      "uuid": "000e911f-bbfc-4b81-aff3-d4e79f2177a9",
+      "rawTextureUuid": "015c844b-0397-4513-9501-d51d6c7b1a88",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 565,
+      "height": 229,
+      "rawWidth": 565,
+      "rawHeight": 229,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

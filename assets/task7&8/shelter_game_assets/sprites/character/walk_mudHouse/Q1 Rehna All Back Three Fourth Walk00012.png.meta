@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "26a7f9fe-0dbd-4a8c-bff6-64aca997a79a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 157,
+  "height": 367,
+  "platformSettings": {},
+  "subMetas": {
+    "Q1 Rehna All Back Three Fourth Walk00012": {
+      "ver": "1.0.4",
+      "uuid": "21bf34b8-2a12-461b-887f-248aefe77f12",
+      "rawTextureUuid": "26a7f9fe-0dbd-4a8c-bff6-64aca997a79a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7.5,
+      "offsetY": -6,
+      "trimX": 7,
+      "trimY": 15,
+      "width": 128,
+      "height": 349,
+      "rawWidth": 157,
+      "rawHeight": 367,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

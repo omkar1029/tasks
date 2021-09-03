@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "2f626ae3-e3aa-4910-a50f-98fc61c469a9",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 631,
+  "height": 337,
+  "platformSettings": {},
+  "subMetas": {
+    "Cemant-Building_TINTED_01": {
+      "ver": "1.0.4",
+      "uuid": "b1cd7a84-0891-44a4-bcdf-4ca56c83c785",
+      "rawTextureUuid": "2f626ae3-e3aa-4910-a50f-98fc61c469a9",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 631,
+      "height": 337,
+      "rawWidth": 631,
+      "rawHeight": 337,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

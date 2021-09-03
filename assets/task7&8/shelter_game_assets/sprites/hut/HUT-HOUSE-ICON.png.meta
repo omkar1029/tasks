@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "41c26baf-acb6-4319-985a-cde253bfb755",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 120,
+  "height": 120,
+  "platformSettings": {},
+  "subMetas": {
+    "HUT-HOUSE-ICON": {
+      "ver": "1.0.4",
+      "uuid": "f6375860-12c4-444d-ba83-b22b20e331af",
+      "rawTextureUuid": "41c26baf-acb6-4319-985a-cde253bfb755",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 1,
+      "trimX": 2,
+      "trimY": 11,
+      "width": 118,
+      "height": 96,
+      "rawWidth": 120,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

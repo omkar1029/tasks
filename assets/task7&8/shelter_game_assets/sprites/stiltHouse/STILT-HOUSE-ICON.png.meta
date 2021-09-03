@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "f6fdc6e1-dcf7-4e3e-80bf-0e03e94a9f89",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 120,
+  "height": 120,
+  "platformSettings": {},
+  "subMetas": {
+    "STILT-HOUSE-ICON": {
+      "ver": "1.0.4",
+      "uuid": "a52cca4d-3c4d-4ffe-a17e-77f45359718f",
+      "rawTextureUuid": "f6fdc6e1-dcf7-4e3e-80bf-0e03e94a9f89",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -1.5,
+      "trimX": 0,
+      "trimY": 7,
+      "width": 119,
+      "height": 109,
+      "rawWidth": 120,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

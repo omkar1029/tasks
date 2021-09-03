@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "e8bc3f1d-5f3c-4f0a-aab3-a2dd68fcd0e3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 440,
+  "height": 610,
+  "platformSettings": {},
+  "subMetas": {
+    "Wood-House_ol": {
+      "ver": "1.0.4",
+      "uuid": "d8d03ba2-e1e3-4dc3-b21a-c2f5eb634039",
+      "rawTextureUuid": "e8bc3f1d-5f3c-4f0a-aab3-a2dd68fcd0e3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 7.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 440,
+      "height": 595,
+      "rawWidth": 440,
+      "rawHeight": 610,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

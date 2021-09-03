@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "ccac1349-5542-4f7d-a441-a9b6c6583878",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 157,
+  "height": 367,
+  "platformSettings": {},
+  "subMetas": {
+    "All Back Three Fourth Walk00122": {
+      "ver": "1.0.4",
+      "uuid": "d692de06-354d-42a5-a294-4026230d0822",
+      "rawTextureUuid": "ccac1349-5542-4f7d-a441-a9b6c6583878",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7,
+      "offsetY": -7,
+      "trimX": 8,
+      "trimY": 16,
+      "width": 127,
+      "height": 349,
+      "rawWidth": 157,
+      "rawHeight": 367,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

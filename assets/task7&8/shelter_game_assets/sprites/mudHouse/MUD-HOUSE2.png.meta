@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "58534bc3-94e3-467d-9329-e871422e5bd6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1041,
+  "height": 866,
+  "platformSettings": {},
+  "subMetas": {
+    "MUD-HOUSE2": {
+      "ver": "1.0.4",
+      "uuid": "50a7b998-4f7c-4459-876f-4ceec7b549f3",
+      "rawTextureUuid": "58534bc3-94e3-467d-9329-e871422e5bd6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1041,
+      "height": 866,
+      "rawWidth": 1041,
+      "rawHeight": 866,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

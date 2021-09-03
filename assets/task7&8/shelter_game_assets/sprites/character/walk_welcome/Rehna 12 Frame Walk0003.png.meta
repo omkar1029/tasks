@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "d3f34c4f-e94e-4d1a-8936-cbcdb1563d60",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 373,
+  "platformSettings": {},
+  "subMetas": {
+    "Rehna 12 Frame Walk0003": {
+      "ver": "1.0.4",
+      "uuid": "80baa06c-ae25-45dc-aba0-0868da4460f6",
+      "rawTextureUuid": "d3f34c4f-e94e-4d1a-8936-cbcdb1563d60",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -15.5,
+      "offsetY": 1.5,
+      "trimX": 1,
+      "trimY": 5,
+      "width": 95,
+      "height": 360,
+      "rawWidth": 128,
+      "rawHeight": 373,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

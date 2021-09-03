@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "7df25b84-910a-43de-bd67-b77577345680",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1600,
+  "height": 366,
+  "platformSettings": {},
+  "subMetas": {
+    "Kerala BG_03_water cut": {
+      "ver": "1.0.4",
+      "uuid": "56be36ba-2be1-4037-bb9d-eda1e86b5cc4",
+      "rawTextureUuid": "7df25b84-910a-43de-bd67-b77577345680",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1600,
+      "height": 366,
+      "rawWidth": 1600,
+      "rawHeight": 366,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

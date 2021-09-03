@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "e6f2ab41-c80d-4831-8c97-55431dcb3e0b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 456,
+  "height": 99,
+  "platformSettings": {},
+  "subMetas": {
+    "WIND WAVES00032": {
+      "ver": "1.0.4",
+      "uuid": "9f146062-376b-4fe7-a45d-8dd3ba8bdbf1",
+      "rawTextureUuid": "e6f2ab41-c80d-4831-8c97-55431dcb3e0b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -2,
+      "trimX": 7,
+      "trimY": 4,
+      "width": 440,
+      "height": 95,
+      "rawWidth": 456,
+      "rawHeight": 99,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.4",
+  "uuid": "a0918638-f04d-4437-92f4-9905a6fbe9a4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 120,
+  "height": 120,
+  "platformSettings": {},
+  "subMetas": {
+    "MUD-HOUSE-ICON2": {
+      "ver": "1.0.4",
+      "uuid": "0b033075-0899-447b-88f7-821fd0a52227",
+      "rawTextureUuid": "a0918638-f04d-4437-92f4-9905a6fbe9a4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1.5,
+      "trimX": 0,
+      "trimY": 3,
+      "width": 120,
+      "height": 117,
+      "rawWidth": 120,
+      "rawHeight": 120,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
