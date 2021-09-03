@@ -12,9 +12,6 @@ export default class GameManager extends cc.Component {
     @property(cc.Label)
     private label: cc.Label = null;
 
-    // @property(Question)
-    // private questionNodes: Question[] = [];
-
     @property(cc.Node)
     private questionNodes: cc.Node[] = [];
 
@@ -33,7 +30,6 @@ export default class GameManager extends cc.Component {
         this.welcomeScreen.playWelcomeSequence();
         cc.Camera.main.getComponent(cc.AudioSource).enabled = true;
         this.label.node.active = true;
-        //this.questions[0].playQuestionSequence();
     }
 
     nextQuestion() {

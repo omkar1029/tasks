@@ -24,21 +24,21 @@ export default class Option extends cc.Component {
 
     private yAboveOptions: number = -300;
 
-    label: cc.Label = null;
+    private label: cc.Label = null;
 
     @property({ tooltip: "Igloo = 1, \nWoodHouse = 2,\nMudHouse = 3,\nHut = 4,\nTreeHouse = 5,\nBoatHouse = 6,\nBuilding = 7" })
-    houseType: House = null;
+    private houseType: House = null;
 
-    answer: House = null
+    private answer: House = null
 
-    resultLabel: cc.Label = null;
+    private resultLabel: cc.Label = null;
 
-    correctLabel: cc.Label = null;
+    private correctLabel: cc.Label = null;
 
-    question: Question = null;
+    private question: Question = null;
 
     @property
-    correctString: string = '0';
+    private correctString: string = '0';
 
     private resultAudioId: number = 0;
 
