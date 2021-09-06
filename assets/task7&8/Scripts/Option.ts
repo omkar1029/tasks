@@ -22,7 +22,7 @@ export default class Option extends cc.Component {
 
     private offset: cc.Vec2 = null;
 
-    private yAboveOptions: number = -300;
+    private yAboveOptions: number = -190;
 
     private label: cc.Label = null;
 

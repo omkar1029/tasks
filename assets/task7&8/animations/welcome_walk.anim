@@ -3,9 +3,9 @@
   "_name": "welcome_walk",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 1.0166666666666666,
+  "_duration": 1,
   "sample": 60,
-  "speed": 0.3,
+  "speed": 0.2,
   "wrapMode": 1,
   "curveData": {
     "comps": {
@@ -230,149 +230,143 @@
           {
             "frame": 0.6,
             "value": {
-              "__uuid__": "16dcd8db-ea7c-4fcb-8fce-381ad525c518"
+              "__uuid__": "6a92dcab-07b3-4739-bca8-1f750142213b"
             }
           },
           {
             "frame": 0.6166666666666667,
             "value": {
-              "__uuid__": "6a92dcab-07b3-4739-bca8-1f750142213b"
+              "__uuid__": "80baa06c-ae25-45dc-aba0-0868da4460f6"
             }
           },
           {
             "frame": 0.6333333333333333,
             "value": {
-              "__uuid__": "80baa06c-ae25-45dc-aba0-0868da4460f6"
+              "__uuid__": "0e561f7e-c67f-40af-a7aa-260f87581797"
             }
           },
           {
             "frame": 0.65,
             "value": {
-              "__uuid__": "0e561f7e-c67f-40af-a7aa-260f87581797"
+              "__uuid__": "e5d0b85d-e2be-409f-a3ba-481315149f27"
             }
           },
           {
             "frame": 0.6666666666666666,
             "value": {
-              "__uuid__": "e5d0b85d-e2be-409f-a3ba-481315149f27"
+              "__uuid__": "7eb3c626-c4ad-4f58-ac8c-125bd5067c30"
             }
           },
           {
             "frame": 0.6833333333333333,
             "value": {
-              "__uuid__": "7eb3c626-c4ad-4f58-ac8c-125bd5067c30"
+              "__uuid__": "b41af27b-9769-4203-b1de-62747a3586fe"
             }
           },
           {
             "frame": 0.7,
             "value": {
-              "__uuid__": "b41af27b-9769-4203-b1de-62747a3586fe"
+              "__uuid__": "f69766f7-83a5-4605-a5d3-36c6cd83f3c8"
             }
           },
           {
             "frame": 0.7166666666666667,
             "value": {
-              "__uuid__": "f69766f7-83a5-4605-a5d3-36c6cd83f3c8"
+              "__uuid__": "6c9bebfb-cbe3-415d-abdc-cd19035ffd3c"
             }
           },
           {
             "frame": 0.7333333333333333,
             "value": {
-              "__uuid__": "6c9bebfb-cbe3-415d-abdc-cd19035ffd3c"
+              "__uuid__": "5206bc17-9a25-4aad-bfc6-63729116ad64"
             }
           },
           {
             "frame": 0.75,
             "value": {
-              "__uuid__": "5206bc17-9a25-4aad-bfc6-63729116ad64"
+              "__uuid__": "815027b1-a6b8-4501-87fb-34f3a47a70ad"
             }
           },
           {
             "frame": 0.7666666666666667,
             "value": {
-              "__uuid__": "815027b1-a6b8-4501-87fb-34f3a47a70ad"
+              "__uuid__": "347d0abb-71e7-4344-baf4-cb9c24830093"
             }
           },
           {
             "frame": 0.7833333333333333,
             "value": {
-              "__uuid__": "347d0abb-71e7-4344-baf4-cb9c24830093"
+              "__uuid__": "16dcd8db-ea7c-4fcb-8fce-381ad525c518"
             }
           },
           {
             "frame": 0.8,
             "value": {
-              "__uuid__": "16dcd8db-ea7c-4fcb-8fce-381ad525c518"
+              "__uuid__": "6a92dcab-07b3-4739-bca8-1f750142213b"
             }
           },
           {
             "frame": 0.8166666666666667,
             "value": {
-              "__uuid__": "6a92dcab-07b3-4739-bca8-1f750142213b"
+              "__uuid__": "80baa06c-ae25-45dc-aba0-0868da4460f6"
             }
           },
           {
             "frame": 0.8333333333333334,
             "value": {
-              "__uuid__": "80baa06c-ae25-45dc-aba0-0868da4460f6"
+              "__uuid__": "0e561f7e-c67f-40af-a7aa-260f87581797"
             }
           },
           {
             "frame": 0.85,
             "value": {
-              "__uuid__": "0e561f7e-c67f-40af-a7aa-260f87581797"
+              "__uuid__": "e5d0b85d-e2be-409f-a3ba-481315149f27"
             }
           },
           {
             "frame": 0.8666666666666667,
             "value": {
-              "__uuid__": "e5d0b85d-e2be-409f-a3ba-481315149f27"
+              "__uuid__": "7eb3c626-c4ad-4f58-ac8c-125bd5067c30"
             }
           },
           {
             "frame": 0.8833333333333333,
             "value": {
-              "__uuid__": "7eb3c626-c4ad-4f58-ac8c-125bd5067c30"
+              "__uuid__": "b41af27b-9769-4203-b1de-62747a3586fe"
             }
           },
           {
             "frame": 0.9,
             "value": {
-              "__uuid__": "b41af27b-9769-4203-b1de-62747a3586fe"
+              "__uuid__": "f69766f7-83a5-4605-a5d3-36c6cd83f3c8"
             }
           },
           {
             "frame": 0.9166666666666666,
             "value": {
-              "__uuid__": "f69766f7-83a5-4605-a5d3-36c6cd83f3c8"
+              "__uuid__": "6c9bebfb-cbe3-415d-abdc-cd19035ffd3c"
             }
           },
           {
             "frame": 0.9333333333333333,
             "value": {
-              "__uuid__": "6c9bebfb-cbe3-415d-abdc-cd19035ffd3c"
+              "__uuid__": "5206bc17-9a25-4aad-bfc6-63729116ad64"
             }
           },
           {
             "frame": 0.95,
             "value": {
-              "__uuid__": "5206bc17-9a25-4aad-bfc6-63729116ad64"
+              "__uuid__": "815027b1-a6b8-4501-87fb-34f3a47a70ad"
             }
           },
           {
             "frame": 0.9666666666666667,
             "value": {
-              "__uuid__": "815027b1-a6b8-4501-87fb-34f3a47a70ad"
-            }
-          },
-          {
-            "frame": 0.9833333333333333,
-            "value": {
               "__uuid__": "347d0abb-71e7-4344-baf4-cb9c24830093"
             }
           },
           {
-            "frame": 1,
+            "frame": 0.9833333333333333,
             "value": {
               "__uuid__": "321809fc-b952-438f-8466-fd0f2c949c8f"
             }
@@ -384,10 +378,10 @@
       "x": [
         {
           "frame": 0,
-          "value": -1050.188
+          "value": -523.896
         },
         {
-          "frame": 1,
+          "frame": 0.9833333333333333,
           "value": 191.799
         }
       ],
@@ -401,7 +395,7 @@
           }
         },
         {
-          "frame": 1,
+          "frame": 0.9833333333333333,
           "value": {
             "__type__": "cc.Vec2",
             "x": 0.8,
