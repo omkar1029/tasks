@@ -454,7 +454,7 @@
       "ctor": "Float64Array",
       "array": [
         191.799,
-        -143.849,
+        -118.551,
         0,
         0,
         0,
@@ -525,7 +525,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": "9c4R1dhiNAzZ8jIqbpguwz"
   },
@@ -1109,7 +1109,7 @@
     "house": {
       "__id__": 24
     },
-    "message": "An igloo is made of snow. It will melt in hot region. Not a good idea.",
+    "message": "An igloo is made of snow. It will melt in hot region. Not a good idea. Try again.",
     "resultClip": {
       "__uuid__": "ada85d48-9f59-4eb7-b758-8598b5128b8d"
     },
@@ -1229,8 +1229,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        319.447,
-        -22.922999999999984,
+        385.226,
+        -9.499,
         0,
         0,
         0,
@@ -2039,8 +2039,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        309.326,
-        -87.108,
+        328.54,
+        -65.567,
         0,
         0,
         0,
@@ -2648,7 +2648,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": "f73LfagjtDzbN69X+og5Zb"
   },
@@ -3807,7 +3807,7 @@
       "__id__": 18
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 87
@@ -4481,7 +4481,7 @@
       "__uuid__": "c1b41dd3-e026-4e12-a94b-7761062eef50"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -4490,7 +4490,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": "b0Wk6PyQRAOrYGWAnJS+8z"
   },
@@ -4968,8 +4968,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        565.604,
-        -198.191,
+        571.796,
+        -172.635,
         0,
         0,
         0,
@@ -6634,7 +6634,7 @@
       "__uuid__": "c1b41dd3-e026-4e12-a94b-7761062eef50"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -6643,7 +6643,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": "00uwRTIUBD8bbv2xa4WvnV"
   },
@@ -7179,8 +7179,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 122,
-      "height": 369
+      "width": 128,
+      "height": 373
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -7235,7 +7235,7 @@
       "__uuid__": "41ae7b4c-6912-47fc-bce6-48ab7f259dd8"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -7244,7 +7244,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_atlas": null,
     "_id": "26xdU1dlpPh4JS3sGWRt/z"
   },
@@ -7657,8 +7657,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -144.24,
-        14.718,
+        -24.14,
+        -6.475,
         0,
         0,
         0,
@@ -7722,8 +7722,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        709.844,
-        -182.862,
+        706.338,
+        -168.187,
         0,
         0,
         0,
@@ -8178,8 +8178,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        565.604,
-        -143.862,
+        658.058,
+        -195.867,
         0,
         0,
         0,
