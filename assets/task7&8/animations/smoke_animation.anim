@@ -55,20 +55,6 @@
           }
         ]
       }
-    },
-    "props": {
-      "width": [
-        {
-          "frame": 0,
-          "value": 104
-        }
-      ],
-      "height": [
-        {
-          "frame": 0,
-          "value": 308
-        }
-      ]
     }
   },
   "events": []
